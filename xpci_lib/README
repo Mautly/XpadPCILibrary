@@ -1,0 +1,27 @@
+This directory contains the files necessary to build the xpci library.
+
+INCLUDES
+--------
+The functions made available for end users are defined in:
+xpci_interface.h
+
+Another include file exists which contains definitions of data and functions that are only for the system developper experts and not end users.
+xpci_interface_expert.h
+
+CODE
+----
+Most of the library functions implementation are in
+xpci_interface.c
+
+A special compilation unit has been created to isolate the code used to manage the various detector chip configuration.
+xpci_registers.c
+
+A special compilation unit has been created to isolate the code used to manage the asynchronous functions calls.
+xpci_asyncLib.c
+
+A special compilation unit has been created to isolate the code used to make code profiling.
+xpci_time.c
+
+PYD 16/2/2011
+==============================================================================================
+
